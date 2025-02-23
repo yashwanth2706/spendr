@@ -1,0 +1,12 @@
+# Ignore files for git push
+# Created by: Nachiketh KS
+
+# Folders
+Scripts
+Lib
+Include
+bin
+*__pycache__
+
+# Files
+*.pyc
