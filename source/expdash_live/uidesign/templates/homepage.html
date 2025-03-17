@@ -1,17 +1,76 @@
+{% load static %}
 <!DOCTYPE html>
 
-<html lang="en">>
+<html lang="en">
     <head><title>homepage</title></head>
-
+    <link rel="stylesheet" href="{% static 'scripts/appbar.css' %}">
+    <link rel="stylesheet" href="{% static 'scripts/todays-data.css' %}">
+    <link rel="stylesheet" href="{% static 'scripts/sidebar.css' %}">
     <body>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Homepage</h1>
-                </div>
-            </div>
+        <!--App bar division for the tool-->
+        <div class="app-bar">
+            <div class="rectangle-8"></div>
+            <div class="spndr">Spndr</div>
+            <div class="nachiketh">, Nachiketh</div>
+            <div class="ellipse-2"></div>
         </div>
+          
+        <!-- Todats data section -->
+        <div class="today-s-data">
+
+            <!-- Sub section Details Today-->
+            <div class="details-today">
+              <div class="rectangle-9"></div>
+              <div class="budget">Budget</div>
+              <div class="utilized">Utilized</div>
+              <div class="leftover">Leftover</div>
+              <div class="_700">700</div>
+              <div class="_0">0</div>
+              <div class="_02">0</div>
+              <div class="_12-02-2025">12/02/2025</div>
+            </div>
+
+            <!-- Sub Section data-base-today -->
+            <div class="data-base-today">
+              <div class="rectangle-10"></div>
+              <div class="database">Database</div>
+              <div class="view-data">View Data</div>
+              <div class="add-new">Add New</div>
+              <div class="edit-or-delete">Edit or Delete</div>
+            </div>
+
+            <!-- Recent - today-->
+            <div class="recent-today">
+              <div class="rectangle-11"></div>
+              <div class="_30">30</div>
+              <div class="_400">400</div>
+              <div class="_50">50</div>
+              <div class="recent-3-10">Recent 3/10</div>
+              <div class="grocessory">Grocessory</div>
+              <div class="shopping">Shopping</div>
+              <div class="lunch">Lunch</div>
+            </div>
+
+            <!-- summary - today -->
+            <div class="summary-today">
+              <div class="rectangle-112"></div>
+              <div class="summary">Summary</div>
+              <div class="latest-trans">Latest Trans.</div>
+              <div class="biggest-exp">Biggest Exp.</div>
+              <div class="category-wise">Category wise.</div>
+            </div>
+          </div>
+          
+          <!-- Sidebar division -->
+          <div class="sidebar">
+            <div class="background"></div>
+            <button class="home" ><img src="{% static 'images/home.png' %}" width=30px height=30px left=5px top=5px></button>
+            <img class="calculator" src="{% static 'images/calculator.png' %}" >
+            <img class="theme" src="{% static 'images/theme.png' %}" >
+        
+          </div>
+          
     </body>
 
 </html>
