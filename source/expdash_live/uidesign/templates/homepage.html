@@ -3,9 +3,9 @@
 
 <html lang="en">
     <head><title>homepage</title></head>
-    <link rel="stylesheet" href="{% static 'scripts/appbar.css' %}">
-    <link rel="stylesheet" href="{% static 'scripts/todays-data.css' %}">
-    <link rel="stylesheet" href="{% static 'scripts/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'scripts/appbar.css' %}?v={{ timestamp }}">
+    <link rel="stylesheet" href="{% static 'scripts/todays-data.css' %}?v={{ timestamp }}">
+    <link rel="stylesheet" href="{% static 'scripts/sidebar.css' %}?v={{ timestamp }}">
     <body>
 
         <!--App bar division for the tool-->
@@ -64,12 +64,24 @@
           
           <!-- Sidebar division -->
           <div class="sidebar">
-            <div class="background"></div>
-            <button class="home" ><img src="{% static 'images/home.png' %}" width=30px height=30px left=5px top=5px></button>
-            <img class="calculator" src="{% static 'images/calculator.png' %}" >
-            <img class="theme" src="{% static 'images/theme.png' %}" >
-        
+
+            
+            <div class="background-sidebar"></div>
+
+            <button class="home">
+              <img src="{% static 'images/home.png' %}?v={{ timestamp }}" alt="Home Icon">
+            </button>
+
+            <button class="calculator">
+              <img src="{% static 'images/calculator.png' %}?v={{ timestamp }}" alt="calculator Icon" >
+            </button>
+
+            <button class="theme">
+              <img src="{% static 'images/theme.png' %}?v={{ timestamp }}" alt="theme Icon" >
+            </button>
+
           </div>
+
           
     </body>
 
